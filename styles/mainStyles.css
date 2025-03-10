@@ -1,0 +1,13 @@
+.gridWrapper{
+  height: 100dvh;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+
+  margin: 4rem 2rem;
+}
+.testimonialContainer{
+  border: 1px solid red;
+  border-radius: 0.5rem;
+}
