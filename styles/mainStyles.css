@@ -8,10 +8,68 @@
   margin: 4rem 2rem;
 }
 .testimonialContainer{
-  border: 1px solid red;
   border-radius: 0.5rem;
 
   padding: 2rem;
 
   height: fit-content;
+}
+.profileContainer{
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+.usernameTitleWrapper{
+  line-height: 1.5rem;
+}
+.textContainer{
+  margin-top: 1.25rem;
+}
+.boldParagraph{
+  font-weight: 600;
+  font-size: 1.75rem;
+}
+.regularParagraph{
+  margin-top: 1.25rem;
+  font-size: 1.14rem;
+}
+
+/* Profile-Specific CSS */
+
+#danielCliffordTestimonial{
+  background-color: hsl(263, 55%, 52%);
+}
+#danielCliffordImg{
+  width: 30px;
+  border-radius: 15px;
+  border: 1px hsl(264, 82%, 80%) solid;
+}
+#danielCliffordName{
+  color: hsl(0, 0%, 100%);
+  font-size: 1.2rem;
+}
+#danielCliffordVG{
+  color: hsl(260, 100%, 95%);
+  font-size: 1rem;
+}
+#danielCliffordBP{
+  color: hsl(0, 0%, 100%);
+}
+#danielCliffordRP{
+  color: hsl(260, 100%, 95%);
+}
+
+#jonathanWaltersTestimonial{
+  background-color: hsl(217, 19%, 35%);
+}
+
+#jeanetteHarmonTestimonial{
+  background-color: hsl(0, 0%, 100%);
+}
+
+#patrickAbramsTestimonial{
+  background-color: hsl(219, 29%, 14%);
+}
+
+#kiraWhittleTestimonial{
+  background-color: hsl(0, 0%, 100%);
 }

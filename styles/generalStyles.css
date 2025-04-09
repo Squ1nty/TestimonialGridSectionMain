@@ -1,4 +1,9 @@
 *{
   padding: 0;
   margin: 0;
+  font-family: "Barlow Semi Condensed", Arial;
+  font-size: 13px;
+}
+body{
+  background-color: hsl(214, 17%, 92%);
 }
