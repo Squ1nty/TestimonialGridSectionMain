@@ -1,6 +1,4 @@
 .gridWrapper{
-  height: 100dvh;
-
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
@@ -13,13 +11,20 @@
   padding: 2rem;
 
   height: fit-content;
+  box-shadow: 5px 5px 50px hsl(0, 0%, 81%);
 }
 .profileContainer{
   display: grid;
   grid-template-columns: 50px 1fr;
 }
 .usernameTitleWrapper{
-  line-height: 1.5rem;
+  line-height: 1.25rem;
+}
+.username{
+  font-size: 1.2rem;
+}
+.educationTitle{
+  font-size: 1rem;
 }
 .textContainer{
   margin-top: 1.25rem;
@@ -39,17 +44,13 @@
   background-color: hsl(263, 55%, 52%);
 }
 #danielCliffordImg{
-  width: 30px;
-  border-radius: 15px;
   border: 1px hsl(264, 82%, 80%) solid;
 }
 #danielCliffordName{
   color: hsl(0, 0%, 100%);
-  font-size: 1.2rem;
 }
 #danielCliffordVG{
   color: hsl(260, 100%, 95%);
-  font-size: 1rem;
 }
 #danielCliffordBP{
   color: hsl(0, 0%, 100%);
@@ -61,15 +62,105 @@
 #jonathanWaltersTestimonial{
   background-color: hsl(217, 19%, 35%);
 }
+#jonathanWaltersImg{
+  border: 1px hsl(224, 10%, 45%) solid;
+}
+#jonathanWaltersName{
+  color: hsl(214, 17%, 92%);
+}
+#jonathanWaltersVG{
+  color: hsl(224, 10%, 45%);
+}
+#jonathanWaltersBP{
+  color: hsl(0, 0%, 100%);
+}
+#jonathanWaltersRP{
+  color: hsl(0, 0%, 81%);
+}
 
 #jeanetteHarmonTestimonial{
   background-color: hsl(0, 0%, 100%);
+}
+#jeanetteHarmonImg{
+  border: 1px hsl(0, 0%, 81%) solid;
+}
+#jeanetteHarmonName{
+  color: hsl(219, 29%, 14%);
+}
+#jeanetteHarmonVG{
+  color: hsl(217, 19%, 35%);
+}
+#jeanetteHarmonBP{
+  color: hsl(217, 19%, 35%);
+}
+#jeanetteHarmonRP{
+  color: hsl(224, 10%, 45%);
 }
 
 #patrickAbramsTestimonial{
   background-color: hsl(219, 29%, 14%);
 }
+#patrickAbramsImg{
+  border: 1px hsl(263, 55%, 52%) solid;
+}
+#patrickAbramsName{
+  color: hsl(0, 0%, 100%);
+}
+#patrickAbramsVG{
+  color: hsl(0, 0%, 100%)
+}
+#patrickAbramsBP{
+  color: hsl(0, 0%, 81%);
+}
+#patrickAbramsRP{
+  color: hsl(0, 0%, 81%);
+}
 
 #kiraWhittleTestimonial{
   background-color: hsl(0, 0%, 100%);
+}
+#kiraWhittleImg{
+  border: 1px hsl(0, 0%, 81%) solid;
+}
+#kiraWhittleName{
+  color: hsl(217, 19%, 35%);
+}
+#kiraWhittleVG{
+  color: hsl(0, 0%, 81%);
+}
+#kiraWhittleBP{
+  color: hsl(217, 19%, 35%);
+}
+#kiraWhittleRP{
+  color: hsl(224, 10%, 45%);
+}
+
+@media(min-width: 1440px){
+  .gridWrapper{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "DCT DCT JWT KWT"
+    "JHT PAT PAT KWT";
+    min-height: auto;
+  }
+  .testimonialContainer{
+    height: auto;
+    width: auto;
+  }
+  #danielCliffordTestimonial{
+    grid-area: DCT;
+  }
+  #jonathanWaltersTestimonial{
+    grid-area: JWT;
+  }
+  #jeanetteHarmonTestimonial{
+    grid-area: JHT;
+  }
+  #patrickAbramsTestimonial{
+    grid-area: PAT;
+  }
+  #kiraWhittleTestimonial{
+    grid-area: KWT;
+  }
 }
