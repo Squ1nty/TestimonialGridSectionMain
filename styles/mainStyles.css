@@ -5,6 +5,9 @@
 
   margin: 4rem 2rem;
 }
+.doubleQuotation{
+  display: none;
+}
 .testimonialContainer{
   border-radius: 0.5rem;
 
@@ -12,10 +15,15 @@
 
   height: fit-content;
   box-shadow: 5px 5px 50px hsl(0, 0%, 81%);
+
+  position: relative;
+  z-index: -1;
 }
 .profileContainer{
   display: grid;
   grid-template-columns: 50px 1fr;
+  position: relative;
+  z-index: 2;
 }
 .usernameTitleWrapper{
   line-height: 1.25rem;
@@ -28,6 +36,8 @@
 }
 .textContainer{
   margin-top: 1.25rem;
+  position: relative;
+  z-index: 2;
 }
 .boldParagraph{
   font-weight: 600;
@@ -147,6 +157,16 @@
   .testimonialContainer{
     height: auto;
     width: auto;
+  }
+  .doubleQuotation{
+    border-radius: 0;
+    width: 100px;
+    display: block;
+
+    position: absolute;
+    z-index: 1;
+    right: 10%;
+    top: 0;
   }
   #danielCliffordTestimonial{
     grid-area: DCT;
